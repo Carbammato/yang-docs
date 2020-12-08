@@ -7,6 +7,9 @@ MIT
 @angular/platform-browser
 MIT
 
+@project161/yang-furigana
+https://github.com/Carbammato/yang-furigana/blob/master/LICENSE
+
 css-loader
 MIT
 Copyright JS Foundation and other contributors
