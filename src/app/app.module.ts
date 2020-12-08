@@ -1,15 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { YangFuriganaComponent } from './yang-furigana/yang-furigana.component';
+import { YangFuriganaModule } from '@project161/yang-furigana';
 import { AppComponent } from './app.component';
+import { YangFuriganaComponent } from './yang-furigana/yang-furigana.component';
 
 @NgModule({
   declarations: [
 	AppComponent,
-	YangFuriganaComponent
+	YangFuriganaComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, YangFuriganaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
