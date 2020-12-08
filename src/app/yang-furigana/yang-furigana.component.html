@@ -1,0 +1,157 @@
+<div class="title">
+	<h2>Fugirana Sample App</h2>
+	<div class="description">
+		Pretty basic place where to test the @yang/furigana project
+	</div>
+</div>
+<div class="container">
+
+	<div *ngIf="false" class="card m-2">
+		<div class="card-header">
+			<span class="mr-3">Development</span>
+			<span class="description">Add class and style to component</span>
+		</div>
+		<div class="card-body">
+			<div class="card-title row">
+				<div class="col">Code</div>
+				<div class="col">Result</div>
+			</div>
+			<div class="card-text row">
+				<div class="col"></div>
+				<div class="col">
+					<span yangFurigana="あした" yangFuriganaClass="furigana-class">明日</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card m-2">
+		<div class="card-header">
+			<span class="mr-3">Example #1</span>
+			<span class="description">Latin letters above japanese symbols</span>
+		</div>
+		<div class="card-body">
+			<div class="card-title row">
+				<div class="col">Code</div>
+				<div class="col">Result</div>
+			</div>
+			<div class="card-text row">
+				<div class="col">
+					<pre>
+&lt;span yangFurigana="Ashita"&gt;明日&lt;/span&gt;
+            </pre>
+				</div>
+				<div class="col">
+					<span yangFurigana="Ashita">明日</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card m-2">
+		<div class="card-header">
+			<span class="mr-3">Example #2</span>
+			<span class="description">Furigana above kanji</span>
+		</div>
+		<div class="card-body">
+			<div class="card-title row">
+				<div class="col">Code</div>
+				<div class="col">Result</div>
+			</div>
+			<div class="card-text row">
+				<div class="col">
+					<pre>
+&lt;span yangFurigana="あした"&gt;明日&lt;/span&gt;
+            </pre>
+				</div>
+				<div class="col">
+					<span yangFurigana="あした">明日</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card m-2">
+		<div class="card-header">
+			<span class="mr-3">Example #3</span>
+			<span class="description">Like #2, but orientation in vertical</span>
+		</div>
+		<div class="card-body">
+			<div class="card-title row">
+				<div class="col">Code</div>
+				<div class="col">Result</div>
+			</div>
+			<div class="card-text row">
+				<div class="col">
+					<pre>
+&lt;span class="vertical" yangFurigana="あした"&gt;明日&lt;/span&gt;
+
+&lt;style&gt;
+  .vertical &#x0007B;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+  &#x0007D;
+&lt;/style&gt;
+            </pre>
+				</div>
+				<div class="col">
+					<span class="vertical" yangFurigana="あした">明日</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card m-2">
+		<div class="card-header">
+			<span class="mr-3">Example 4</span>
+			<span class="description">Add style to component</span>
+		</div>
+		<div class="card-body">
+			<div class="card-title row">
+				<div class="col">Code</div>
+				<div class="col">Result</div>
+			</div>
+			<div class="card-text row">
+				<div class="col">
+					<pre>
+&lt;span yangFurigana="あした" yangFuriganaStyle="color:blue;"&gt;明日&lt;/span&gt;
+              </pre>
+				</div>
+				<div class="col">
+					<span yangFurigana="あした" yangFuriganaStyle="color:blue;">明日</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card m-2">
+		<div class="card-header">
+			<span class="mr-3">Example 5</span>
+			<span class="description">Add class to component</span>
+		</div>
+		<div class="card-body">
+			<div class="card-title row">
+				<div class="col">Code</div>
+				<div class="col">Result</div>
+			</div>
+			<div class="card-text row">
+				<div class="col">
+					<pre>
+&lt;style&gt;
+  .test-class &#x0007B;
+    font-style: italic;
+    color: red;
+    font-size: 0.6rem;
+  &#x0007D;
+&lt;/style&gt;
+
+&lt;span yangFurigana="あした" yangFuriganaClass="test-class"&gt;明日&lt;/span&gt;
+                </pre>
+				</div>
+				<div class="col">
+					<span yangFurigana="あした" yangFuriganaClass="test-class">明日</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
