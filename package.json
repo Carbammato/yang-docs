@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-	"start": "ng serve",
-	"publish": "ng build --prod --base-href 'https://carbammato.github.io/yang' && npx angular-cli-ghpages --dir=dist/yang",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
